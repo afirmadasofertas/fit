@@ -3,7 +3,7 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { HugeiconsIcon } from "@hugeicons/react";
+import { HugeiconsIcon, type IconSvgElement } from "@hugeicons/react";
 import {
   UserAdd01Icon, TsunamiIcon, OfficeChairIcon, Sun02Icon,
   GlobalIcon, Coupon01Icon, CrownIcon, Dumbbell01Icon,
@@ -32,7 +32,7 @@ const CLASSIC_PERKS = [
 ];
 
 function PerkItem({ icon, label, dark }: {
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  icon: IconSvgElement;
   label: string;
   dark: boolean;
 }) {
